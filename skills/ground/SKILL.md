@@ -42,17 +42,24 @@ Vague stakes ("not ideal", "nothing terrible") → say: "The cost of inaction is
 
 Do NOT proceed to Scope if stakes are unclear.
 
-### 5. Scope
+### 5. Assumptions
+Surface one key assumption hiding in the problem statement. Don't ask "what are you assuming?" — instead, name the assumption you detect and test it:
+- "You're assuming [X]. What if that's not true?"
+- "This only works if [X] holds. Has that been validated?"
+
+One assumption is enough. Pick the riskiest one.
+
+### 6. Scope
 Probe until user defines boundaries: "What's NOT in scope?" / "Smallest valuable version?"
 
 ## Transition
 
-**Coverage**: Trigger, Pain, Stakes, and Scope answered with specifics
+**Coverage**: Trigger, Pain, Stakes, Assumptions, and Scope answered with specifics
 **Saturation**: User repeats same pain points; no new dimensions emerging
 **Gate**: "Any pain points we haven't touched?"
 
 When criteria met → announce:
-> "Problem: [one sentence]. Cost of inaction: [one sentence]. Ready to explore solutions?"
+> "Problem: [one sentence]. Cost of inaction: [one sentence]. Key assumption: [one sentence]. Ready to explore solutions?"
 
 Then invoke explore skill.
 
