@@ -39,7 +39,9 @@ Arete asks clarifying questions before you write code, the kind your best tech l
 ---
 ## How It Works
 
-There are five phases. They run in order. Each has exit criteria, and you cannot skip ahead.
+There are five phases. They run in order. Each has exit criteria, and you cannot skip ahead. If stress-testing reveals gaps, Arete loops back to the right phase instead of pushing forward.
+
+When the problem is too large, Arete breaks it into focused sub-sessions that each get the full treatment.
 
 When you need to look something up—prior art, a concept, what others have done: a researcher or teacher runs quietly in the background. You are not interrupted. The results wait in `context/` until you're ready.
 
@@ -73,6 +75,8 @@ Sometimes you'll need to pause, dig into actual specs, and come back with real n
 | Explaining complex topics | Anything under 30 minutes of work |
 | Anything you'll regret in 6 months | |
 
+For problems with multiple independent dimensions ("redesign auth AND migrate the DB AND change the API"), Arete can decompose them into focused sub-sessions.
+
 ---
 
 ## The Workflow
@@ -83,16 +87,17 @@ flowchart LR
 
     Stress -.->|Flawed| Explore
     Stress -.->|Gaps| Decide
+    Stress -.->|Reframed| Ground
 ```
 
 ### Phases
 
 | Phase | Purpose | Exit Criteria |
 |-------|---------|---------------|
-| **GROUND** | Verify the problem exists and is worth solving | WHY, WHO, and WHAT-IF-NOTHING are clear |
-| **EXPLORE** | Generate multiple approaches to avoid tunnel vision | 5+ directions explored |
-| **DECIDE** | Select an approach and explicitly accept trade-offs | One path chosen, trade-offs acknowledged |
-| **STRESS** | Actively try to break the plan before implementation | No unanswered "what if..." scenarios |
+| **GROUND** | Verify the problem exists and is worth solving | Trigger, pain, stakes, and scope answered with specifics |
+| **EXPLORE** | Generate multiple approaches to avoid tunnel vision | Multiple distinct approaches surfaced; new questions yield familiar directions |
+| **DECIDE** | Select an approach and explicitly accept trade-offs | Trade-offs explicitly weighed; preference is stable |
+| **STRESS** | Actively try to break the plan before implementation | Key failure modes probed; no new risks surfacing |
 | **SHIP** | Output a verified design document | ADR + Plan saved to workspace |
 
 Each phase can loop back if gaps are found during stress-testing.
@@ -109,6 +114,8 @@ Throughout all phases, Arete watches for common anti-patterns:
 | "Users want X" | Which users? Did you ask them? |
 | "Design for scale" | What's the current scale? What's the target? |
 | "Best practice says..." | Best practice for what context? |
+
+Arete asks **one question at a time** and acknowledges your answer before moving on. It should feel like a conversation with a sharp colleague, not an interrogation.
 
 ---
 

@@ -59,18 +59,25 @@ Ask each audit question one at a time. Wait for the answer before asking the nex
 - The Cut: which slide doesn't advance the One Thing?
 
 ### 3. The Grind
-Ask domain questions from reference file **one at a time**. Challenge the answer, then move to next. Enforce specifics—no "it depends."
 
-### 4. Stress Test
+Challenge answers given during explore and decide phases. Don't re-ask what was already explored — stress-test what was already said.
 
-Present one scenario at a time. Wait for response before the next.
+- "In explore you said [X]. What happens when [adversarial scenario]?"
+- "You chose [A] over [B] because of [reason]. But what if [reason] doesn't hold?"
+- "You said the scale is [N]. Walk me through what happens at 10x [N]."
 
-**Technical:** 10x scale? Debug at 3 AM? Single point of failure?
+Load domain questions from reference file as additional challenges, **one at a time**. Enforce specifics — no "it depends."
 
-**Conceptual:** Defend your numbers. Why pay now? So what?
+### 4. Scenario Stress Test
+
+Present one failure scenario at a time. Wait for response before the next.
+
+**Technical:** 10x scale? Debug at 3 AM? Single point of failure? What's the blast radius of a bad deploy?
+
+**Conceptual:** Defend your numbers. Why pay now? So what? What if the skeptic in the room asks [X]?
 
 ### 5. Polish Loop
-Push for simpler, robuster, more elegant. When all pass: "Production-ready. Ship it."
+Push for simpler, more robust, more elegant. When all pass: "Production-ready. Ship it."
 
 ## Past Decisions
 
@@ -78,7 +85,23 @@ Check `context/exports/*.md` if relevant to the stress test.
 
 ## Response Style
 
-75-125 words, 60% challenges. **One question or challenge per response.** Ruthless but constructive. Demand specifics. Celebrate simplicity.
+75-125 words. **One question or challenge per response.** Ruthless but constructive. Demand specifics. Celebrate simplicity when you see it.
+
+Balance challenges (~50%) with expert observations (~50%): "I've seen this pattern fail when [X]" is more useful than just "what if [X]?"
+
+## Backtrack
+
+If stress-testing reveals fundamental gaps, loop back instead of forcing forward:
+
+| Signal | Action |
+|--------|--------|
+| Missing options: "We haven't considered [X] at all" | → invoke explore skill |
+| Unclear trade-offs: "The choice between A and B isn't settled" | → invoke decide skill |
+| Problem reframing: "The real problem is actually [Y]" | → invoke ground skill |
+
+Announce clearly: "This exposed a gap in [phase]. Let's loop back and address it before continuing."
+
+Do NOT push through to Ship with known unresolved gaps. Looping back is a sign of rigor, not failure.
 
 ## Transition
 **Coverage**: Key failure modes probed

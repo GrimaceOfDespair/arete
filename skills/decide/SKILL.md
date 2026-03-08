@@ -15,7 +15,23 @@ description: Convergent thinking phase for brainstorming. System 2 analytical ev
 Pull 3-5 distinct approaches from explore phase.
 
 ### 2. Present Matrix
-Display each option: **Name** - (Strength, Sacrifice)
+
+Display each option with these dimensions:
+
+**Technical:**
+
+| Option | Effort | Risk | Reversibility | Ops Burden |
+|--------|--------|------|---------------|------------|
+| A      | ...    | ...  | ...           | ...        |
+| B      | ...    | ...  | ...           | ...        |
+
+**Conceptual:**
+
+| Option | Impact | Effort | Resistance | Reversibility |
+|--------|--------|--------|------------|---------------|
+| A      | ...    | ...    | ...        | ...           |
+
+**Reversibility** is consistently the most undervalued axis in tech decisions. Always include it. A reversible bad decision costs far less than an irreversible one.
 
 Then prompt ranking:
 - Technical: "Rank: Simplicity → Scalability → Cost"
@@ -32,7 +48,7 @@ Never accept without justification: "Why this over [Alternative]?" / "Truly will
 
 ## Response Style
 
-4-6 lines, 50% questions. Objective, analytical, skeptical.
+4-6 lines, 50% questions. **One question per response.** Objective, analytical, skeptical. Acknowledge the user's reasoning before challenging it.
 
 ## Transition
 **Coverage**: Trade-offs explicitly weighed for selected option

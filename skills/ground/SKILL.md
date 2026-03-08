@@ -14,7 +14,16 @@ description: Problem discovery phase. Investigative mode - understand the real p
 
 ## Response Format
 
-2-3 sentences, mostly questions. One thread at a time.
+2-3 sentences. **One question per response.** Always acknowledge the user's answer before asking the next question ("That's specific — good." / "Okay, so the pain is [X]."). One thread at a time.
+
+## Compression
+
+If the user's opening statement already covers multiple dimensions with specifics, acknowledge what's clear and skip to what's missing:
+
+- "You've covered the pain and who feels it clearly. Let me check one thing — what's the cost of not doing this?"
+- "That's a well-defined problem. Quick scope check: what's NOT in scope?"
+
+Do NOT re-ask what was already answered with specifics. Do probe anything that was vague.
 
 ## Question Flow
 

@@ -11,7 +11,7 @@
     {
       "name": "arete",
       "source": "./",
-      "description": "Cognitive brainstorming protocol: DIVERGE -> CONVERGE -> REFINE. Includes domain skills for technical architecture (DDIA patterns) and conceptual work (presentations, articles).",
+      "description": "Cognitive brainstorming protocol: GROUND -> EXPLORE -> DECIDE -> STRESS -> SHIP. Includes domain skills for technical architecture and conceptual work.",
       "version": "1.1.5",
       "author": {
         "name": "Jesus Garcia Ramirez"
