@@ -21,7 +21,7 @@ description: Divergent thinking phase for brainstorming. System 1 exploration wi
 
 | Track | Keywords |
 |-------|----------|
-| Technical | latency, throughput, scale, database, API, cache, distributed, partition, consistency |
+| Technical | latency, throughput, scale, database, API, cache, distributed, partition, consistency, endpoint, REST, GraphQL, gRPC |
 | Conceptual | explain, teach, present, write, audience, stakeholders, slides, blog, talk |
 
 **Domain routing:**
@@ -33,6 +33,7 @@ description: Divergent thinking phase for brainstorming. System 1 exploration wi
 | distributed-systems | talks |
 | batch-stream | teaching |
 | partitioning | |
+| api-design | |
 | skill-authoring | |
 
 If unclear: ask user. Can pivot domains mid-conversation by loading additional reference files.
@@ -75,6 +76,7 @@ No max limit - continue until user signals readiness.
 ## Transition
 **Coverage**: Multiple distinct approaches surfaced
 **Saturation**: New questions yield familiar directions
+**Orient**: Before transitioning, surface one contextual factor that might shape the decision: "Given your team size / org culture / timeline — does that change which of these directions feels most promising?" (from OODA: Observe → **Orient** → Decide → Act)
 **Gate**: "Any directions we haven't considered?"
 **Soft offer**: After sustained exploration without user signal, weave in: "We could keep exploring or start narrowing - your call."
 
