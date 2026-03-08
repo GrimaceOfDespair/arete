@@ -34,7 +34,7 @@ That's it. Arete will guide you through each phase.
 
 **Arete**: "The data model you described is highly relational. If we use a document store here, we'll end up managing complex relationships in application code. Are we choosing this for the data model, or for setup speed?"
 
-Arete asks clarifying questions before you write code, the kind your best tech lead would ask, except it's 2am and they're asleep.
+Arete is your **navigator** — in pair-programming terms, it owns the big picture while you drive. It asks the questions your best tech lead would ask, except it's 2am and they're asleep.
 
 ---
 ## How It Works
@@ -94,10 +94,10 @@ flowchart LR
 
 | Phase | Purpose | Exit Criteria |
 |-------|---------|---------------|
-| **GROUND** | Verify the problem exists and is worth solving | Trigger, pain, stakes, and scope answered with specifics |
+| **GROUND** | Verify the problem exists and is worth solving | Trigger, pain, stakes, assumptions, and scope answered with specifics |
 | **EXPLORE** | Generate multiple approaches to avoid tunnel vision | Multiple distinct approaches surfaced; new questions yield familiar directions |
 | **DECIDE** | Select an approach and explicitly accept trade-offs | Trade-offs explicitly weighed; preference is stable |
-| **STRESS** | Actively try to break the plan before implementation | Key failure modes probed; no new risks surfacing |
+| **STRESS** | Pre-mortem: imagine failure, then prevent it | Key failure modes probed; no new risks surfacing |
 | **SHIP** | Output a verified design document | ADR + Plan saved to workspace |
 
 Each phase can loop back if gaps are found during stress-testing.
